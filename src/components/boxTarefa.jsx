@@ -3,17 +3,20 @@ import '../index.css'
 import CreateIcon from '@material-ui/icons/Create';
 import DeleteIcon from '@material-ui/icons/Delete';
 
-export default (props)=> {
 
-    return(
+class BoxTarefa extends React.Component{      
+    render(props){
+        return(
         <div id="boxtarefa">
-        <div id='faixalateral'>
-            <div id='teste'><CreateIcon/></div>
+            <div id='faixalateral'>
+                <div id='teste'><CreateIcon/></div>
+            </div>
+                <p id='btitulo'>{this.props.titulo}</p>
+                <p id='bdesc'>{this.props.descricao}</p>
+            <div id='iconedelete'><DeleteIcon/></div>
         </div>
-        <p id='btitulo'>Titulo</p>
-        <p id='bdata'>12/10/1990</p>
-        <p id='bdesc'>Pagar a conta de luz até o dia 05/03</p>
-        <div id='iconedelete'><DeleteIcon/></div>
-    </div>
-    )
+        )
+    }
 }
+
+export default BoxTarefa

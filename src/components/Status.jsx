@@ -1,7 +1,7 @@
 import React from 'react'
 import '../index.css'
 
-export default (props)=> {
+ const Status = (props) =>{
 
     return(
         <div id='status'>
@@ -10,3 +10,5 @@ export default (props)=> {
       </div>
     )
 }
+
+export default Status

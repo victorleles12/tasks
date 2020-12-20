@@ -25,20 +25,7 @@ margin-top: 40px;
   margin-left: 90px;
   margin-top: 30px;
   position: absolute;
-  width: 107px;
-  height: 39px;
-  background-color: #E3E0E0;
-  border: none;
-  font-family: 'Nerko One', cursive;
-  font-size:20px;
-  color: #FFFFFF
-}
-
-#inputData{
-  margin-left: 250px;
-  margin-top: 30px;
-  position: absolute;
-  width: 190px;
+  width: 274px;
   height: 39px;
   background-color: #E3E0E0;
   border: none;

@@ -4,17 +4,12 @@ import BoxInputCompleto from './components/boxInputcompleto'
 import Status from './components/Status'
 import Boxtarefa from './components/boxTarefa'
 import './index.css';
-import App from './App';
-
-
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
     <BoxInputCompleto/>
     <Status/>
-    <Boxtarefa/>
+    <Boxtarefa titulo='Titulo Texte' descricao='Descricao Teste'/>
   </React.StrictMode>,
   document.getElementById('root')
 );
-

@@ -1,8 +1,11 @@
 import React from 'react'
 
-export default (props)=> {
+ const BoxInput = (props)=> {
 
     return(
-        <input type="text" id={props.id} type={props.type} placeholder={props.value}/>
+        <input type="text" id={props.id}/>
     )
 }
+
+
+export default BoxInput
