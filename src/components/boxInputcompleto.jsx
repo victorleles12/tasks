@@ -1,24 +1,42 @@
 import React, {Component} from 'react'
-import BoxInput from './boxImput'
 import '../index.css'
 
 
 class dadosTask extends Component {
+constructor(){
+    super()
 
-    gravarDados = () => {
-    console.log('Teste')
+    this.state = {
+        titulo: '',
+        descricao: ''
     }
+}
+
+    alterarTitulo = (e)=>{
+        this.setState({titulo: e.target.value})
+    }
+
+    alterarDescricao = (e)=>{
+        this.setState({descricao: e.target.value})
+    }
+
+    submeterForm = (e) => {
+        console.log('Titulo: ' + this.state.titulo)
+        console.log('Descricao: ' + this.state.descricao)
+        e.preventDefault()
+    }
+
 
 render(){
 
     return(
-        <div id='boxtop'>
+        <form className='boxtop' onSubmit={this.submeterForm}>
         <p id='titulo'>Titulo</p>
-        <BoxInput id='inputTitulo' />
-        <p id='descricao'>Descrição</p>
-        <BoxInput id='inputDesc'/>
-        <button id='guardar' onClick={this.gravarDados}>Guardar</button>
-        </div>
+        <input type="text" id='inputTitulo' value={this.state.titulo} onChange={this.alterarTitulo}/>
+        <p id='descricao' >Descrição</p>
+        <input type="text" id='inputDesc' value={this.state.descricao} onChange={this.alterarDescricao}/>
+        <input type='submit' id='guardar' onClick={this.gravarDados} />
+        </form>
     )
 }
 } 

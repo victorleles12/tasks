@@ -6,11 +6,12 @@ import Boxtarefa from './components/boxTarefa'
 import './index.css';
 
 
+
 ReactDOM.render(
   <React.StrictMode>
-    <BoxInputCompleto/>
+    <BoxInputCompleto />
     <Status/>
-    <Boxtarefa/>
+    <Boxtarefa />
   </React.StrictMode>,
   document.getElementById('root')
 );

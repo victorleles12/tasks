@@ -3,14 +3,14 @@ body{
 }
 
 
-#boxtop{
-position: absolute;
-width: 486px;
-height: 181px;
-background: #FFFFFF;
-margin-left: 37%;
-margin-top: 40px;
-}
+.boxtop{
+  position: absolute;
+  width: 486px;
+  height: 181px;
+  background: #FFFFFF;
+  margin-left: 37%;
+  margin-top: 40px;
+  }
 
 #boxtarefa{
   position: absolute;
@@ -47,7 +47,7 @@ margin-top: 40px;
   color: #FFFFFF
 }
 
-#boxtop > #guardar{
+.boxtop > #guardar{
 margin-left: 80%;
 margin-top: 100px;
 position: absolute;
