@@ -5,11 +5,12 @@ import Status from './components/Status'
 import Boxtarefa from './components/boxTarefa'
 import './index.css';
 
+
 ReactDOM.render(
   <React.StrictMode>
     <BoxInputCompleto/>
     <Status/>
-    <Boxtarefa titulo='Titulo Texte' descricao='Descricao Teste'/>
+    <Boxtarefa/>
   </React.StrictMode>,
   document.getElementById('root')
 );
