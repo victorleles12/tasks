@@ -21,8 +21,7 @@ constructor(){
     }
 
     submeterForm = (e) => {
-        console.log('Titulo: ' + this.state.titulo)
-        console.log('Descricao: ' + this.state.descricao)
+         this.props.submeterForm();
         e.preventDefault()
     }
 
